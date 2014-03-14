@@ -1,0 +1,24 @@
+{
+  "name": "oop-utils",
+  "version": "0.1.0",
+  "description": "Some utilies for oop in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tim-smart/node-oop-utils.git"
+  },
+  "keywords": [
+    "oop",
+    "extends",
+    "utils"
+  ],
+  "author": "Tim Smart <tim@fostle.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tim-smart/node-oop-utils/issues"
+  },
+  "homepage": "https://github.com/tim-smart/node-oop-utils"
+}
