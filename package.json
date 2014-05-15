@@ -4,7 +4,8 @@
   "description": "Some utilies for oop in Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "ln -sf '../../hooks/pre-commit' .git/hooks/pre-commit"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/tim-smart/node-oop-utils/issues"
   },
-  "homepage": "https://github.com/tim-smart/node-oop-utils"
+  "homepage": "https://github.com/tim-smart/node-oop-utils",
+  "devDependencies": {
+    "jscs": "git://github.com/tim-smart/node-jscs.git#require-single-space-before-operators",
+    "jshint": "^2.5.0"
+  }
 }

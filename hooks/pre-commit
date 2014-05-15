@@ -1,0 +1,24 @@
+#!/bin/sh
+
+git diff --cached --diff-filter=ACM --name-only \
+| grep '\.\(php\|js\|css\)$' \
+| while read file; do
+	case "$(echo "$file" | awk -F . '{print $NF}')" in
+		php)
+			phpcs --standard=PSR2 "$file"
+		;;
+
+		js)
+			./node_modules/.bin/jshint "$file" && \
+				./node_modules/.bin/jscs "$file"
+		;;
+
+		css)
+			csslint "$file"
+		;;
+	esac
+
+	if [ $? -ne 0 ]; then
+		exit 1
+	fi
+done
