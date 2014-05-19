@@ -30,11 +30,5 @@
     "maximumLineLength": 80,
 
     "requireCamelCaseOrUpperCaseIdentifiers": true,
-    "requireCapitalizedConstructors": true,
-
-    "requireSingleSpaceBeforeOperators": {
-      "{": [")", "=", ":", "try", "do", "return"],
-      "(": ["if", "else", "while", "for", "catch", "=", ":"],
-      "[": ["=", ":"]
-    }
+    "requireCapitalizedConstructors": true
 }
