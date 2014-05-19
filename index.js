@@ -38,7 +38,7 @@ exports.inherits = function inherits(Child, Parent) {
             var Ctor = function() {
                 this.constructor = Child;
             };
-            Ctor.prototype = new Parent();
+            Ctor.prototype = Parent.prototype;
             Child.prototype = new Ctor();
         }
     }
