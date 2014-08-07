@@ -3,7 +3,7 @@
 exports.mixin = function mixin(target, source) {
     var key = null;
 
-    if ('function' === Object.keys) {
+    if ('function' === typeof Object.keys) {
         var keys = Object.keys(source);
 
         for (var i = 0, il = keys.length; i < il; i += 1) {
@@ -15,7 +15,7 @@ exports.mixin = function mixin(target, source) {
     }
 
     for (key in source) {
-        if (Object.hasOwnProperty(source, key)) {
+        if (source.hasOwnProperty(key)) {
             target[key] = source[key];
         }
     }
