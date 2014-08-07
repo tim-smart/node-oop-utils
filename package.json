@@ -1,6 +1,6 @@
 {
   "name": "oop-utils",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Some utilies for oop in Javascript",
   "main": "index.js",
   "scripts": {
